@@ -13,10 +13,10 @@ div.header {
     border-top: 0px;
     border-bottom-color: coral;
     background-color:rgb(172, 229, 231);
+    position: fixed;
   }
 
  .footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -30,7 +30,7 @@ div.header {
     height: 75px;
 }
 
-div .nav {
+div #nav {
     list-style-type: none;
     float: right;
     padding: 10px;
@@ -38,22 +38,25 @@ div .nav {
   }
 
   li {
-      display: inline;
-      padding: 10px;
-      
-  }
-
-
-  li:hover{
-      background-color: blueviolet;
-  }
-
-  p, h3,h4 {
-      width: 90%;
-      margin-left: 20px;
-  }
-  
-.prod {
-    display: inline-block;
-    color: darkblue;
+    display: inline;
+    padding: 10px;    
 }
+
+
+li:hover{
+    background-color: blueviolet;
+}
+
+p, h3,h4 {
+    width: 90%;
+    margin-left: 20px;
+}
+
+.prod {
+    width: 80%;
+    height: auto;
+    
+  
+  }
+
+.mySlides {display:none;}
