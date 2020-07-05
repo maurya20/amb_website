@@ -40,7 +40,7 @@ div #nav {
 li {
     display: inline;
     padding: 10px;
-    color: red;  
+    color: white;  
 }
 
 li:hover{
@@ -113,19 +113,18 @@ div.vid .yt {
 
 .services  {
   width: 100%;
-  margin-top: 95px;
-}
+  margin-top: 85px;
+  height: 600px;
+  }
 
-div.services.ser {
+.ser {
   width: 20%;
   float: left;
+  background-color: rgb(32, 28, 28);
   margin: 5px;
-  padding: 10px;
-  background-color: black;
-}
+  }
 
 .caspoc {
-  width: 65%;
+  width: 75%;
   float: right;
-  background-color: black;
-}
+  }
