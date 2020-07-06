@@ -57,6 +57,7 @@ p, h4, h3 {
   width: 100%;
   height: 400px;
   margin-top: 75px;
+  background-color: lightgray;
 }
 
 div.container .prod {
@@ -108,13 +109,15 @@ div.vid .yt {
 }
 
 .about {
-  margin-top: 90px;
+  margin-top: 80px;
+  background-color: lightgray;
 }
 
 .services  {
   width: 100%;
-  margin-top: 85px;
+  margin-top: 80px;
   height: 600px;
+  background-color: lightgray;
   }
 
 .ser {
@@ -129,8 +132,18 @@ div.vid .yt {
   float: right;
   }
 
+.req {
+  margin-top: 80px;
+  background-color: lightgray;
+  width: 100%;
+  
+}
+
 .demo {
-  margin: 100px;
+  margin-top: 40px;
+  height: 600px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .btn {
@@ -158,13 +171,14 @@ div.vid .yt {
 
 .contact {
   width: 100%;
-  margin-top: 95px;
+  margin-top: 80px;
   height: 600px;
+  background-color: lightgray;
   }
 
   .us {
     width: 60%;
-    margin: 15px;
+    margin: 25px;
     float: left;
   }
   .social {
