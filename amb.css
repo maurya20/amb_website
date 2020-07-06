@@ -158,6 +158,18 @@ div.vid .yt {
 
 .contact {
   width: 100%;
-  margin: 95px;
+  margin-top: 95px;
   height: 600px;
+  }
+
+  .us {
+    width: 60%;
+    margin: 15px;
+    float: left;
+  }
+  .social {
+    background-color: #666;
+    color: azure;
+    float: right;
+    margin: 30px;
   }
