@@ -34,11 +34,12 @@ div #nav {
     list-style-type: none;
     float: right;
     padding: 10px;
+    display: inline;
     
   }
 
 li {
-    display: inline;
+  display: inline;
     padding: 10px;
     color: white;  
 }
@@ -50,7 +51,7 @@ li:hover{
 
 p, h4, h3 {
     width: 90%;
-    margin: 0 60px 0 60px;  
+    margin: 15px;
 }
 
 .container {
@@ -178,12 +179,39 @@ div.vid .yt {
 
   .us {
     width: 60%;
-    margin: 25px;
+    margin-left: 80px;
     float: left;
   }
   .social {
-    background-color:black;
-    color: white;
+    background-color:rgb(247, 192, 90);
+    color: blue;
     float: right;
     margin: 30px;
   }
+
+
+
+
+
+ 
+  
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content d {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content d:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
