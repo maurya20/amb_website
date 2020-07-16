@@ -205,7 +205,13 @@ div.vid .yt {
   .dropdown-content a {
     padding: 5px;
     display: block;
-    
+    color: rgb(87, 87, 238);
   }
   
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+background-color: blueviolet;
+}
