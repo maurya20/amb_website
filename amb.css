@@ -261,3 +261,9 @@ div.vid .yt {
 .dropdown-content a:hover {
 background-color: blueviolet;
 }
+
+
+ul li #time {
+  background-color: rgb(12, 12, 12);
+  display: inline;
+}

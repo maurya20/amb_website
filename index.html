@@ -2,18 +2,23 @@
 <html lang="en">
 
 <head>
+  <title>Home</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="amb.css">
-  <title>About</title>
+  <script src="amb.js"></script>
+  
 </head>
 
 <body>
 
   <div class="header">
     <img class="logo" src="images/logo.png" width="200px" height="150px">
-    <ul id="nav">
 
+    <ul id="nav">
+      <li>
+        <p id="time"></p>
+      </li>
       <li><a href="index.html">Home</li>
       <div class="dropdown">
         <li><a href="products.html">Products</li>
@@ -36,7 +41,8 @@
     </ul>
   </div>
   <div class="about">
-    <br><br><h3>Ambition Technologies</h3><br><br>
+    <br><br>
+    <h3>Ambition Technologies</h3><br><br>
     <p>In partnership with technology leaders worldwide, Ambition Technologies offers an ecosystem of highly integrated
       Electronics design software and hardware solutions, tools and products for the Indian market. These products range
       from EDA Tools For PCB Design, VLSI- IC design, EM Simulation, Equipments for PCB prototyping, PCB Fabrication
@@ -49,7 +55,7 @@
       development. The AUP program offers affordable but high quality, industry standard, hardware and software learning
       tools along with certified student and faculty training programs.</p>
 
-      <embed src="images/a.pdf" type="application/pdf" height="450px" width="90%">
+    <embed src="images/a.pdf" type="application/pdf" height="450px" width="90%">
   </div>
   <div class="footer">
     <h5>Ambition Technologies, 17, First Floor, Pocket 2, Sector 24, Rohini, New Delhi - 110085
@@ -57,7 +63,14 @@
       Phone: +91-8178192187/+91-9810400671</h5>
 
   </div>
-  <script src="amb.js"></script>
+  <script>
+  var dat = new Date();
+  p = dat.getHours()
+  r = dat.getMinutes()
+  s = dat.getSeconds()
+  document.getElementById("time").innerHTML = p+":"+r+":"+s;
+  </script>
+  
 </body>
 
 </html>
