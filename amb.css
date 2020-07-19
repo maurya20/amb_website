@@ -264,6 +264,7 @@ background-color: blueviolet;
 
 
 ul li #time {
-  background-color: rgb(12, 12, 12);
+  background-color:rgb(196, 218, 100);
+  color: red;
   display: inline;
 }
