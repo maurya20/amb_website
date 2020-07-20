@@ -10,9 +10,9 @@ body {
 .header {
   position: fixed;
   top: 0;
-    background-color:rgb(196, 218, 100);
-    width: 100%;
-    font-weight: bold;
+  width: 100%;
+  font-weight: bold;
+  background-color: #9fbda0;
    
 }
 
@@ -32,21 +32,32 @@ body {
 
 div #nav {
   list-style-type: none;
-    float: right;
-    padding: 10px;
+  float: right;
+    padding-top: 25px;
     display: inline;  
-  }
+}
 
-li {
+ul li {
   display: inline;
-    padding: 10px;
-    color: white;  
+  padding: 5px;
+  margin: 5px;
 }
 
-li:hover{
-    background-color: blueviolet;
-    
+ul li #time {
+  color: black;
+  display: inline;
 }
+
+ul li a {
+  color: white;
+  display: inline;
+  font-weight: 900;
+  font-size: 25px;
+}
+ul li a:hover {
+  color: blue;
+}
+
 
 p, h4, h3 {
     width: 90%;
@@ -82,9 +93,6 @@ div.container .prod {
   display: none;
 }
 
-embed {
-  margin: 20px 60px 0 60px;
-}
 
 .vid {
   width: 100%;
@@ -123,7 +131,7 @@ div.vid .yt {
 .ser {
   width: 20%;
   float: left;
-  background-color: rgb(32, 28, 28);
+  background-color: rgb(252, 228, 121);
   margin: 5px;
   }
 
@@ -194,6 +202,7 @@ div.vid .yt {
   .dropdown {
     position: relative;
     display: inline-block;
+  
   }
 
   .dropdown-content {
@@ -210,18 +219,15 @@ div.vid .yt {
   
 .dropdown:hover .dropdown-content {
   display: block;
+  background-color: #fff;
 }
 
 .dropdown-content a:hover {
-background-color: blueviolet;
+color: blueviolet;
 }
 
 
-ul li #time {
-  background-color:rgb(196, 218, 100);
-  color: red;
-  display: inline;
-}
+
 
 div.container .homed1 {
   width: 20%;
