@@ -68,7 +68,7 @@ p, h4, h3 {
   width: 100%;
   height: 700px;
   margin-top: 75px;
-  background-color: lightgray;
+  background-color: white;
 }
 
 div.container .prod {
@@ -176,25 +176,6 @@ div.vid .yt {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-
-.contact {
-  width: 100%;
-  margin-top: 80px;
-  height: 600px;
-  background-color: lightgray;
-  }
-
-  .us {
-    width: 60%;
-    margin-left: 80px;
-    float: left;
-  }
-  .social {
-    background-color:rgb(247, 192, 90);
-    color: blue;
-    float: right;
-    margin: 30px;
-  }
 
 
 
