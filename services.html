@@ -2,81 +2,92 @@
 <html lang="en">
 
 <head>
+  <title>Services</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="amb.css">
-  <title>Services</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 
 <body onload="x=setInterval(myClk, 1000)">
 
-  <div class="header">
-    <img class="logo" src="images/logo.png" width="200px" height="150px">
-    <ul id="nav">
-    <li>
-        <p id="time"></p>
-      </li>
+  <nav class="navbar navbar-expand-lg navbar-light bg-info">
+    <a class="navbar-brand" href="#"><img src="images/logo.png" style="width: 260px;height:80px;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
 
-      <li><a href="index.html">Home</li>
-      <div class="dropdown">
-        <li><a href="products.html">Products</li>
-        <div class="dropdown-content">
-          <a href="#" target="_blank">Link 1</a>
-          <a href="#" target="_blank">Link 2</a>
-         
-
-        </div>
-      </div>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="req.html">Downloads</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </div>
-  <div class="services">
-    <div class="ser">
-      <ul><br><br>
-        <li>Training on EDWinXP</li><br><br>
-        <li>Training on EMPIRE XPU</li><br><br>
-        <li>Training on Deepex</li><br><br>
-        <li>Training on Mipec</li><br><br>
-        <li>Training on MagiQ</li><br><br>
-        <li>Training on RMS</li><br><br>
-        <li>Training on PoScope</li><br><br>
-        <li>Training on Empyrean</li><br><br>
-        <li>Training on DipTrace</li><br><br>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Products
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="products.html">Software</a>
+            <a class="dropdown-item" href="products.html">Hardware</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <p id="time"></p>
+          </a>
+        </li>
       </ul>
     </div>
-    <div class="caspoc"><br><br>
-      <p><b> Training content of CASPOC Software</b><br><br>
-        The broad objectives shall be as given below for the CASPOC Software
-        Modeling and simulation is a valuable tool in the area of education and training. Especially in the field of
-        power
-        electronics and drives. Animation gives valuable information about the simulation of Power Electronics and
-        Electrical Drives. Displaying current-paths gives insight in the behavior of the circuit and can reveal failure
-        modes. It reveals more insight in the circuit operation then only displaying simulation results in graphs.
-        In this instructor-led, live training, participants will learn how to use the Caspoc software to create Power
-        Electronics circuits and build applications and projects. CASPOC is used in the design and simulation of complex
-        power and control devices and systems such as: Rectifiers, DC Converters, AC Converters Resonant Converters,
-        Power Engineering, Induction Machines, Vector Controls, Mechanics, Active Filters, Harmonics, DC Machines,
-        Stepper Motors and more, used in such industries as: Aerospace, Automotive, Utility, Industrial, Transportation,
-        Commercial Electronics and many more... The course starts by examining a set of existing schematics, then
-        drawing
-        out an original circuit in Caspoc. The training steps through various process steps involved in designing and
-        discuss
-        and explore each step-in detail with live examples and hands-on-practical sessions.Certificate after completion.
-        The main objective of PLC & Scada is to make the aspiring engineers acquainted with the conceptual as well as
-        practical knowledge of the Industrial Automation & latest technologies being used to achieve industrial
-        automation.
-        The idea of organizing this workshop is to inculcate the basic fundamentals of automation in the students and
-        provide them with a platform to work on, In the Near Future.</p>
+  </nav>
+
+  <div class="container" style="margin-top:30px">
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>Training</h3>
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a class="btn" href="images/a.pdf" download="Newsletter"> Download Training Modules </a><img
+              src="images/new.gif" width="50px" height="40px"><br><br>
+          </li>
+          <li class="nav-item">
+            <a class="btn" href="images/a.pdf" download="Newsletter"> Download Training Content</a><br><br> </li>
+          <li class="nav-item">
+            <a class="btn" href="images/a.pdf" download="Newsletter"> Download User Guide 2.0 </a><br><br> </li>
+          <li class="nav-item">
+            <a class="btn" href="#" download="Newsletter"> Training on MagiQ </a><br><br> </li>
+          <li class="nav-item">
+            <a class="btn" href="#" download="Newsletter">Training on Empyrean </a><br><br> </li>
+        </ul>
+        <hr class="d-sm-none">
+      </div>
+      <div class="col-sm-8" style="text-align: justify;">
+        <h4>
+          <marquee style="color: red; scroll" direction="left">We are giving free webinor for our clients.</marquee>
+          </h3>
+          <p><b> IoT Course Content</b><br><br>
+           Introducing the Internet of Things, the various types of devices connected to the internet, components of IoT devices, design considerations, IoT device and physical world interfacing, hardware and software trade-offs, IoT simulators OpenWSN and Cooja, IoT and how the embedded systems work, working with Big Data, Cloud, Analytics.
+           This course is designed for clearing the Intellipaat Internet of Things Certification Exam. The entire course content is designed by industry professionals to get the best jobs in top MNCs. As part of this training, you will be working on real-time projects and assignments that have immense implications in the real-world industry scenarios, thus helping you fast-track your career effortlessly.
+
+At the end of this training program, there will be quizzes that perfectly reflect the type of questions asked in the respective certification exam and help you score better marks. Intellipaat Course Completion Certification will be awarded upon the completion of the project work (after the expert review) and upon scoring at least 60% marks in the quiz. Certification is well recognized in top 80+ MNCs like Ericsson, Cisco, Cognizant, Sony, Mu Sigma, Saint-Gobain, Standard Chartered, TCS, Genpact, Hexaware, etc.</p>
+          <br><br><br><br><br><br><br><br><br><br><br><br>
+
+      </div>
     </div>
+   <div  class="footer" style="margin-bottom:0">
+    <p>M & M Technologies, AA, First Floor, Pocket A, Sector A, XYZ, New Delhi - 000000
+      Email:contact@xyz.com</p>
   </div>
-  <div class="footer">
-    <h5>Ambition Technologies, 17, First Floor, Pocket 2, Sector 24, Rohini, New Delhi - 110085
-      Email: sales@ambitec.org, www.ambitec.org
-      Phone: +91-8178192187/+91-9810400671</h5>
-  </div>
-  <script src="amb.js"></script>
+    <script src="amb.js"></script>
 </body>
 
 </html>
