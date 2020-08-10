@@ -1,2 +1,2 @@
 # amb_website
-A sample website project.
+A sample static website project using HTML, CSS, JavaScript and deployed on github pages.
