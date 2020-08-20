@@ -10,24 +10,33 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
   <script>
-    var sArea = setInterval(myArea, 1);
-    function myArea() {
+    var myclock = setInterval(myFunction, 1);
+    function myFunction() {
+      radius = document.getElementById("radius").value;
       side = document.getElementById("side").value;
-      area = side * side;
-      document.getElementById("sqr").innerHTML = "Area of the square = " + area + "  " + "Square unit.";
-      document.getElementById("s").style.width = side + "px";
-      document.getElementById("s").style.height = side + "px";
-      radi = document.getElementById("radi").value;
-      carea = Math.PI * radi * radi;
-      document.getElementById("cir").innerHTML = "Area of the circle = " + carea + "  " + "Square unit.";
-      document.getElementById("circle").style.width = radi + "px";
-      document.getElementById("circle").style.height = radi + "px";
-    };
-  </script>
+      sarea = side*side;
+      area = Math.PI*radius*radius;
+      document.getElementById("demo").innerHTML = "Area of your circle = "+area+"  "+"square unit.";
+      document.getElementById("sqr").innerHTML = "Area of your square = "+sarea+"  "+"square unit.";
+    }
+    var myclock = setInterval(myCir, 1);
+    function myCir() {
+        side = document.getElementById("side").value;
+        radius = document.getElementById("radius").value;
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.clearRect(0, 0, 850, 550);
+        ctx.beginPath();
+        ctx.arc(455, 285, radius, 0, 2*Math.PI);
+        ctx.rect(35, 25, side, side);
+        ctx.stroke();
+    }
+</script> 
 </head>
 
-<body onload="sArea = setInterval(myArea, 1)">
+<body onload="myclock = setInterval(myFunction, 1)">
   <nav class="navbar navbar-expand-lg navbar-light bg-info">
     <a class="navbar-brand" href="#"><img src="images/logo.png" style="width: 260px;height:50px;"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -63,27 +72,29 @@
   </nav>
 
 
-  <div class="container" style="margin-top:30px">
-    <label for="square">Enter the side length of square to get area:</label>
-    <input type="text" id="side" value=0>
-    <h3 id="sqr">demo</h3>
-    <div id="s" style="background-color: yellow">
-      <p>.</p>
-    </div>
-    <br><br>
-
-    <label>Enter the radius length of circle to get area:</label>
-    <input type="text" id="radi" value=0>
-    <h3 id="cir">test</h3>
-    <div id="circle" style="background-color: blue; border-radius: 50%">
-      <p>.</p>
-    </div>
+  <div class="container">
+    <div style="width:95%">
+      <div style="width:30%;float:left;">
+      <label>Input Range:0-520:</label>
+      <input type="text" placeholder="Type side of the square..." id="side">
+      <h3 id="sqr">demo</h3>
+      <label>Input Range:0-260:</label>
+      <input type="text" placeholder="Type radius of the circle..." id="radius">
+      <h3 id="demo">demo</h3>
+      </div>
+      <div style="width:68%; float:right;">
+      <canvas id="myCanvas" width="850" height="550"style="background-color: gray;">
+      Your browser does not support the HTML canvas tag.</canvas>
+      </div>
+      </div>
+      
+      
   </div>
   <div class="footer" style="margin-bottom:0">
     <p>M & M Technologies, AA, First Floor, Pocket A, Sector A, XYZ, New Delhi - 000000
       Email:mukesh.ice17@gmail.com</p>
   </div>
-  <script src="amb.js"></script>
+
 </body>
 </body>
 
