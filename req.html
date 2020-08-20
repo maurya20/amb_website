@@ -11,23 +11,24 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <script>
-      var sArea = setInterval(myArea, 1);
-      function myArea() {
-         side = document.getElementById("side").value;
-         area = side * side;
-         document.getElementById("sqr").innerHTML = "Area of the square = " + area + "  " + "Square unit.";
-         document.getElementById("s").style.width = side + "px";
-         document.getElementById("s").style.height = side + "px";
-         radi = document.getElementById("radi").value;
-         carea = Math.PI * radi * radi;
-         document.getElementById("cir").innerHTML = "Area of the circle = " + carea + "  " + "Square unit.";
-         document.getElementById("circle").style.width = radi + "px";
-         document.getElementById("circle").style.height = radi + "px";
-      };
-   </script>
+    var sArea = setInterval(myArea, 1);
+    function myArea() {
+      side = document.getElementById("side").value;
+      area = side * side;
+      document.getElementById("sqr").innerHTML = "Area of the square = " + area + "  " + "Square unit.";
+      document.getElementById("s").style.width = side + "px";
+      document.getElementById("s").style.height = side + "px";
+      radi = document.getElementById("radi").value;
+      carea = Math.PI * radi * radi;
+      document.getElementById("cir").innerHTML = "Area of the circle = " + carea + "  " + "Square unit.";
+      document.getElementById("circle").style.width = radi + "px";
+      document.getElementById("circle").style.height = radi + "px";
+    };
+  </script>
 </head>
+
 <body onload="sArea = setInterval(myArea, 1)">
-<nav class="navbar navbar-expand-lg navbar-light bg-info">
+  <nav class="navbar navbar-expand-lg navbar-light bg-info">
     <a class="navbar-brand" href="#"><img src="images/logo.png" style="width: 260px;height:50px;"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,21 +63,28 @@
   </nav>
 
 
- <div class="container" style="margin-top:30px">
-   <label for="square">Enter the side length of square to get area:</label>
-   <input type="text" id="side" value=0>
-   <h3 id="sqr">demo</h3>
-   <div id="s" style="background-color: yellow">
+  <div class="container" style="margin-top:30px">
+    <label for="square">Enter the side length of square to get area:</label>
+    <input type="text" id="side" value=0>
+    <h3 id="sqr">demo</h3>
+    <div id="s" style="background-color: yellow">
       <p>.</p>
-   </div>
-   <br><br>
-
-   <label>Enter the radius length of circle to get area:</label>
-   <input type="text" id="radi" value=0>
-   <h3 id="cir">test</h3>
-   <div id="circle" style="background-color: blue; border-radius: 50%">
-      <p>.</p>
-   </div>
     </div>
+    <br><br>
+
+    <label>Enter the radius length of circle to get area:</label>
+    <input type="text" id="radi" value=0>
+    <h3 id="cir">test</h3>
+    <div id="circle" style="background-color: blue; border-radius: 50%">
+      <p>.</p>
+    </div>
+  </div>
+  <div class="footer" style="margin-bottom:0">
+    <p>M & M Technologies, AA, First Floor, Pocket A, Sector A, XYZ, New Delhi - 000000
+      Email:mukesh.ice17@gmail.com</p>
+  </div>
+  <script src="amb.js"></script>
 </body>
+</body>
+
 </html>
