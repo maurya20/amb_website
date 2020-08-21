@@ -29,8 +29,8 @@
         var ctx = c.getContext("2d");
         ctx.clearRect(0, 0, 850, 550);
         ctx.beginPath();
-        ctx.arc(455, 285, radius, 0, 2*Math.PI);
-        ctx.rect(35, 25, side, side);
+        ctx.arc(404, 275, radius, 0, 2*Math.PI);
+        ctx.rect(150, 15, side, side);
         ctx.stroke();
     }
 </script> 
@@ -75,10 +75,11 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-4">
-      <label>Input Range:0-520:</label>
+        <br>
+      <label>Input Range:0-530:</label>
       <input type="text" placeholder="Type side of the square..." id="side">
       <h3 id="sqr">demo</h3>
-      <label>Input Range:0-260:</label>
+      <label>Input Range:0-274:</label>
       <input type="text" placeholder="Type radius of the circle..." id="radius">
       <h3 id="demo">demo</h3>
     </div>
