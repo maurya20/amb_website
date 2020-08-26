@@ -23,10 +23,11 @@ function myFunction() {
 function myClk() {
   d = new Date();
   day = d.get
-  m = d.getSeconds();
-  z = d.getHours();
-  y = d.getMinutes();
-  x = m%100;
+  s = d.getSeconds();
+  h = d.getHours();
+  m = d.getMinutes();
+  x = s%100;
+  ampm = h<12 ? "AM":"PM"
   weekday = new Array(7);
   weekday[0] = "Sunday";
   weekday[1] = "Monday";
@@ -37,5 +38,5 @@ function myClk() {
   weekday[6] = "Saturday";
 
   n = weekday[d.getDay()];
-  document.getElementById("time").innerHTML = n+":   "+z+":"+y +":"+ x;
+  document.getElementById("time").innerHTML = n+":   "+h%12+":"+m +":"+ x +" "+ ampm;
 }
