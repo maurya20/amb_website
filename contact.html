@@ -75,23 +75,47 @@
         <h3> Contact Us</h3>
         <p>Contact us for anything related to our products and services.<br>
           We will do our best to get back to you as soon as possible.</p>
-          <h3> Contact Form</h3>
-      
-          <form action="index.html">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name"><br>
-            <label for="email">Email - ID:</label>
-            <input type="text" id="email" name="email"><br>
-            <label for="tel">Mobile No:</label>
-            <input type="tel" id="Mobile Number" name="Mobile Number"><br>
-            <label for="city">Your City:</label>
-            <input type="text" id="city" name="city"><br>
-            <label for="sub">Subject:</label>
-            <input type="text" id="sub" name="subject"><br>
-            <textarea rows="4" cols="30" name="comment" form="usrform">
-    Enter Your comments here...</textarea>
-            <input class="btn" type="submit" onclick="myFunction()" value="Send"><br><br><br><br><br><br>
-          </form>
+        
+            <!-- Default form contact -->
+<form class="text-center border border-light p-5" action="index.html">
+
+    <p class="h4 mb-4">Contact Form</p>
+
+    <!-- Name -->
+    <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Full Name">
+
+    <!-- Email -->
+    <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+    <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Mobile Number">
+    <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Your City">
+
+    <!-- Subject -->
+    <label>Subject</label>
+    <select class="browser-default custom-select mb-4">
+        <option value="" disabled>Choose option</option>
+        <option value="1" selected>Feedback</option>
+        <option value="2">Report a Bug</option>
+        <option value="3">Request Quote</option>
+        <option value="4">Request Demo</option>
+    </select>
+
+    <!-- Message -->
+    <div class="form-group">
+        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
+    </div>
+
+    <!-- Copy -->
+    <div class="custom-control custom-checkbox mb-4">
+        <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+        <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
+    </div>
+
+    <!-- Send button -->
+    <button class="btn btn-info btn-block" type="submit">Send</button>
+
+</form>
+<!-- Default form contact -->
+
           <h3> Find Us on Google Map</h3><br>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.831261390209!2d77.0866029142516!3d28.724588382381544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d06b865fdb3f7%3A0x590172b5c5f05f16!2sAMBITION%20TECHNOLOGIES!5e0!3m2!1sen!2sin!4v1594445168367!5m2!1sen!2sin" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
  
