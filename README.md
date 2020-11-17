@@ -3,3 +3,4 @@ A static website project using HTML, CSS, JavaScript and deployed on github page
 # HTML5
 # Bootstrap 4
 # JavaScript
+![Alt text](https://maurya20.github.io/amb_website/images/amb.gif)
